@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<body>
+    <div> 
+        <table >
+            <tr>
+   
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+            @foreach (var d in Model)
+            {
+                <tr>
+                    <td>@d.Name1</td>
+                    <td>@d.Age</td>
+                    <td>@d.Salary</td>
+                </tr>
+            }
+        </table>  
+    </div>
+</body>
+</html>
